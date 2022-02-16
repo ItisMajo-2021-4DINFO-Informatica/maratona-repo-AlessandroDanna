@@ -1,0 +1,22 @@
+﻿<Window x:Class="DannaProvaComune5App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DannaProvaComune5App"
+        mc:Ignorable="d"
+        Title="Risultati maratone" Height="650" Width="800">
+    <StackPanel>
+        <Button x:Name="BtnLeggiDaFile" Content="Leggi da file" Click="BtnLeggiDaFile_Click"/>
+        <DataGrid x:Name="DgElencoAtleti" Height="300" />
+        <Label Content="Inserisci il nome dell'atleta seguito dalla città:"/>
+        <TextBox x:Name="TxtTitolo" />
+        <Label x:Name="LblAtleta" />
+        <Button x:Name="BtnTempoImpiegato" Content="Visualizza tempo impiegato"/>
+        <Label Content="Inserisci il nome della città:"/>
+        <TextBox x:Name="TxtAlbum" />
+        <Label x:Name="LblNumBrani" />
+        <Button x:Name="BtnAtletiPartecipanti" Content="Visualizza atleti partecipanti"/>
+        <Label x:Name="LblDurata" />
+    </StackPanel>
+</Window>
