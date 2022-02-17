@@ -10,13 +10,13 @@
         <Button x:Name="BtnLeggiDaFile" Content="Leggi da file" Click="BtnLeggiDaFile_Click"/>
         <DataGrid x:Name="DgElencoAtleti" Height="300" />
         <Label Content="Inserisci il nome dell'atleta seguito dalla città:"/>
-        <TextBox x:Name="TxtTitolo" />
+        <TextBox x:Name="TxtNome" />
         <Label x:Name="LblAtleta" />
-        <Button x:Name="BtnTempoImpiegato" Content="Visualizza tempo impiegato"/>
+        <Button x:Name="BtnTempoImpiegato" Content="Visualizza tempo impiegato" Click="BtnTempoImpiegato_Click"/>
         <Label Content="Inserisci il nome della città:"/>
-        <TextBox x:Name="TxtAlbum" />
-        <Label x:Name="LblNumBrani" />
-        <Button x:Name="BtnAtletiPartecipanti" Content="Visualizza atleti partecipanti"/>
+        <TextBox x:Name="TxtCitta" />
+        <Label x:Name="LblAtleti" />
+        <Button x:Name="BtnAtletiPartecipanti" Content="Visualizza atleti partecipanti" Click="BtnAtletiPartecipanti_Click"/>
         <Label x:Name="LblDurata" />
     </StackPanel>
 </Window>

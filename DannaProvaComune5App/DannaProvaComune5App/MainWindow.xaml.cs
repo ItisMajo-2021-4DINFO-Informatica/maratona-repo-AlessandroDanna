@@ -34,5 +34,19 @@ namespace DannaProvaComune5App
             maratone.LeggiDati();
             DgElencoAtleti.Items.Refresh();
         }
+
+        private void BtnTempoImpiegato_Click(object sender, RoutedEventArgs e)
+        {
+            string nome = TxtNome.Text;
+            string tempoTrovato = maratone.CercaTempo(nome);
+            LblAtleta.Content = tempoTrovato;
+        }
+
+        private void BtnAtletiPartecipanti_Click(object sender, RoutedEventArgs e)
+        {
+            string citta = TxtCitta.Text;
+            string atletiTrovati = maratone.CercaAtleti(citta);
+            LblAtleti.Content = atletiTrovati;
+        }
     }
 }

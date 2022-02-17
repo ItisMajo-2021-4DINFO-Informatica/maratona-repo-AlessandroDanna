@@ -56,21 +56,35 @@ namespace DannaProvaComune5App
             }
         }
 
-        /*public string CercaArtista(string titolo)
+        public string CercaTempo(string nome)
         {
-            string artista = titolo + "--NON TROVATO--";
+            string tempo = nome + "--NON TROVATO--";
 
-            foreach (var brano in elencoBrani)
+            foreach (var maratona in elencoMaratone)
             {
-                if (brano.TitoloBrano == titolo)
+                if (maratona.NomeAtleta == nome)
                 {
-                    artista = brano.NomeArtista;
+                    tempo = maratona.NomeAtleta;
                 }
             }
 
-            return artista;
+            return tempo;
         }
 
+        public string CercaAtleti(string citta)
+        {
+            string atleti = citta + "--NON TROVATO--";
+            
+            foreach (var maratona in elencoMaratone)
+            {
+                if(maratona.Citta == citta)
+                {
+                    atleti = maratona.NomeAtleta;
+                }
+            }
+            return atleti;
+        }
+        /*
         public string ContaBrani(string album)
         {
             string numBraniStr = album + "--NON TROVATO--";
