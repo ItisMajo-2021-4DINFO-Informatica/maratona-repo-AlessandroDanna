@@ -11,8 +11,9 @@ namespace DannaProvaComune5App
         //NomeAtleta % SocietaAppartenenza % Ore % Minuti % Citta
         public string NomeAtleta { get; set; }
         public string SocietaAppartenenza { get; set; }
-        public string Ore { get; set; }
-        public string Minuti { get; set; }
+
+        public string Tempo { get; set; }
+
         public string Citta { get; set; }
     }
 }

@@ -22,6 +22,16 @@ namespace DannaProvaComune5App
             elencoMaratone.Add(maratona);
         }
 
+       
+
+        public int CalcolaTempo(string tempo)
+        {
+            int minuti = 0;
+            int ore = int.Parse(tempo.Substring(0, 2));
+            int minutiParziali = int.Parse(tempo.Substring(3, 2));
+            return minuti;
+        }
+
         public void LeggiDati()
         {
             using (FileStream flussoDati = new FileStream("maratona.txt", FileMode.Open, FileAccess.Read))
@@ -32,13 +42,12 @@ namespace DannaProvaComune5App
                     {
                         string linea = lettoreDati.ReadLine();
                         string[] campi = linea.Split('%');
-
+               
                         Maratona maratona = new Maratona();
                         maratona.NomeAtleta = campi[0];
                         maratona.SocietaAppartenenza = campi[1];
-                        maratona.Ore = campi[2];
-                        maratona.Minuti = campi[3];
-                        maratona.Citta = campi[4];
+                        maratona.Tempo = campi[2];
+                        maratona.Citta = campi[3];
 
                         Aggiungi(maratona);
 
